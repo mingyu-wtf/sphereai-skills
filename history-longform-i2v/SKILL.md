@@ -1,20 +1,31 @@
-# 역사 롱폼 자동화 I2V (8종)
+---
+name: longform-free-1-preflight
+description: 역사 롱폼 자동 제작을 시작하기 전에 PC 사양(GPU·RAM·디스크)과 필요한 도구를 점검하고 기본 도구(ffmpeg, 파이썬 패키지)를 설치할 때 사용. '시작 전 점검', '내 PC로 되나', '설치해줘' 요청.
+---
 
-> 요약본 안내: 이 파일은 sphereai.work 페이지에 공개된 설명을 바탕으로 작성한 요약이다. 원본 SKILL.md가 아니다. 모든 ZIP이 이메일 입력 뒤 메일 수신 방식이라 원본을 받지 못했다.
+# [무료] 시작 전 준비 점검
 
-**설명:** 역사 인물·사건 하나로 5분 안팎 역사 롱폼 1편을 만드는 세트. 소재·구성안, 대본, 무료 나레이션, 컷 이미지, 이미지→영상 변환, 가편집, 썸네일·업로드 문구까지. 영상 변환은 크레딧 대신 내 PC GPU로 수행.
+## 필요한 것
+- 파이썬 3.9 이상
+- 인터넷 연결(설치 시)
+- 비용: 없음(전부 무료). 설치 용량: 기본 도구 수백 MB
 
-## 포함된 스킬
+## 하는 일
+1. `python preflight.py` — PC를 읽기만 합니다(아무것도 바꾸지 않음). GPU·RAM·디스크, ffmpeg/파이썬 패키지 유무를 `[OK]/[없음]` 체크리스트로 보여 주고 `preflight.json` 에 저장합니다.
+2. 없는 것이 있으면 `python install_basics.py` (계획만 출력) → 사용자가 OK 하면 `python install_basics.py --yes`.
+3. 결과의 **영상 변환 경로**를 읽어 줍니다. 무료판은 정지 이미지 + 부드러운 줌으로 완성하는 것이 기본이고, GPU가 충분한 PC면 Pro판에서 AI 영상 변환을 켤 수 있다고 안내합니다.
 
-- longform-free-1-preflight: 시작 전 준비 점검 — PC 사양·필요 도구 점검 (T2V 세트와 공유)
-- longform-free-2-plan: 소재·구성안 기획 — 5분 내외 구성안 (T2V 세트와 공유)
-- longform-free-3-script: 대본 작성 — 30블록 나레이션 대본
-- longform-free-4-tts: 무료 나레이션(엣지 TTS) (T2V 세트와 공유)
-- longform-free-5-images: 다중 스타일 이미지(구글 플로우) — 유화·수묵·수채·웹툰 등 8가지 스타일
-- longform-free-6-video: 이미지→영상 자동 변환 — 컷 이미지를 7초 영상으로 변환 (ComfyUI, 내 PC)
-- longform-free-7-edit: 가편집·자막·렌더
-- longform-free-8-finish: 후보정·썸네일·업로드 문구 (T2V 세트와 공유)
+## 사용자에게 알려 줄 것
+- 지금부터 무엇이 설치되는지, 비용이 있는지(없음)를 먼저 말하고 OK를 받고 설치합니다.
+- 구글 로그인·계정 생성은 대신 하지 않습니다.
+- **ComfyUI 프로그램 자체의 설치는 사용자가 직접 합니다**(공식 설치 후 한 번 실행해 둠). 이 스킬은 설치해 주지 않고, 이미 설치된 ComfyUI 를 점검·안내만 합니다.
+- Pro판은 같은 점검에 ComfyUI 영상 변환 설치까지 더해집니다.
 
-## 출처
+## 다음 스킬 (끝나면 묻지 말고 바로 이어서 실행)
+`longform-free-2-plan`
 
-- https://sphereai.work/skills/longform-free-1-preflight/
+---
+*Pro판에서는 이 단계의 검사·검수·재시도가 자동으로 처리됩니다.*
+
+---
+만든이: sphereai.work (https://sphereai.work)

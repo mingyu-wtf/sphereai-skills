@@ -1,0 +1,122 @@
+{
+  "_설명": "Copy this file to the top of your work folder (threads-ops) as config.json and edit it. Paths are relative to the folder that holds config.json. Basic version: small, safe daily amounts.",
+  "handle": "<내 핸들>",
+  "display_name": "<내 계정 표시 이름>",
+  "concept": "정부 지원금 정보 + 쿠팡 후기 전달",
+  "channel_intro": "놓치기 쉬운 지원금 정리해서 올리는 계정",
+  "paths": {
+    "queue": "data/queue.json",
+    "engage_log": "logs/engage.json",
+    "hold_list": "logs/reply_hold.json",
+    "alerts": "logs/alerts.md",
+    "plan_dir": "plan",
+    "run_log_dir": "logs",
+    "report_dir": "logs/reports",
+    "report_history": "logs/report_history.json",
+    "viral_analysis": "research/viral_analysis.md",
+    "prompt": "prompt.md",
+    "report_prompt": "report_prompt.md"
+  },
+  "schedule": {
+    "active_hours": [
+      "08:30",
+      "23:30"
+    ],
+    "window_min": 120,
+    "max_due_per_run": 2,
+    "post_slots": [
+      "11:00",
+      "19:30"
+    ],
+    "post_jitter_min": [
+      -15,
+      40
+    ],
+    "post_min_gap_min": 130,
+    "engage_slots": [
+      "10:00",
+      "20:30"
+    ],
+    "engage_jitter_min": [
+      -10,
+      25
+    ],
+    "engage_counts": [
+      5,
+      5
+    ],
+    "research_at": "08:40",
+    "research_jitter_min": [
+      0,
+      20
+    ],
+    "queue_min": 3,
+    "research_extra": 2
+  },
+  "limits": {
+    "replies_per_day": 10,
+    "thanks_per_day": 0,
+    "follows_per_day": 5,
+    "follows_per_slot": [
+      3,
+      2
+    ],
+    "seconds_between_people": [
+      20,
+      40
+    ]
+  },
+  "keywords": {
+    "engage": [
+      "월급",
+      "절약",
+      "할인",
+      "쿠폰",
+      "지원금",
+      "재테크",
+      "적금",
+      "가계부",
+      "생활비",
+      "청년 지원금"
+    ],
+    "research": [
+      "지원금",
+      "절약",
+      "할인",
+      "월급",
+      "연말정산"
+    ]
+  },
+  "official_domains": [
+    "go.kr",
+    "korea.kr",
+    "gov.kr",
+    "bokjiro.go.kr",
+    "mohw.go.kr",
+    "moel.go.kr",
+    "work24.go.kr",
+    "molit.go.kr",
+    "nps.or.kr",
+    "energy.or.kr",
+    "mcst.go.kr"
+  ],
+  "coupang": {
+    "enabled": false,
+    "disclosure": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "browser": {
+    "tool": "claude-in-chrome",
+    "_tool_설명": "claude-in-chrome | playwright-mcp | aside | 기타. 자동 실행 때 claude -p에 허용할 도구 이름은 아래 claude_allowed_tools에 적는다."
+  },
+  "claude_allowed_tools": [
+    "Bash",
+    "Read",
+    "Edit",
+    "Write",
+    "Glob",
+    "Grep",
+    "WebSearch",
+    "WebFetch",
+    "mcp__claude-in-chrome__*"
+  ]
+}

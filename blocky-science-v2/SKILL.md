@@ -1,26 +1,55 @@
-# 블렌더 3D 롱폼 자동화 V2 (14종)
+---
+name: blocky-science-start-here-v2
+description: Map for 8-9 minute What-if science videos in a blocky 3D world, v2 - now with a ready-to-run Blender code kit (block city, walking characters, a comet in the sky). Which skill at each step and what you need. Start here. 블록 과학 롱폼 시작 안내(v2).
+---
 
-> 요약본 안내: 이 파일은 sphereai.work 페이지에 공개된 설명을 바탕으로 작성한 요약이다. 원본 SKILL.md가 아니다. 모든 ZIP이 이메일 입력 뒤 메일 수신 방식이라 원본을 받지 못했다.
+# Blocky Science Long-form: Start Here (v2)
 
-**설명:** 블록 3D 세계로 8~9분 '만약 ~라면?' 과학 영상을 만드는 세트. 대본, 무료 TTS 나레이션, 블록 3D 장면, 자막 카드, 썸네일, 세로 하이라이트까지.
+This skill is the map. It tells the user which skill to use next and checks that they have what each step needs.
 
-## 포함된 스킬
+The format: a 16:9 long-form video, 8-9 minutes, that asks "What if...?" and answers with real science, shown in a cute blocky 3D world. Topics land best when they happen where the viewer lives.
 
-- blocky-science-start-here-v2: 블록 과학 롱폼 시작 안내 v2 — 걷는 캐릭터·블록 혜성 코드 키트 포함
-- blocky-code-kit: 블록 3D 코드 키트 — 블록 도시·강·구름·걷는 캐릭터·혜성·카메라 워킹 블렌더 파이썬 키트
-- blocky-world-v3: 블록 세계 v3 — 불 켜진 블록 도시, 픽셀 강, 블록 구름, 네모 해, 잔디 섬 무대
-- blocky-comet: 블록 혜성 연출 기본 — 정육면체 얼음 머리·빛줄기·블록 꼬리 혜성 연출
-- blocky-character-acting-v2: 블록 캐릭터 연기 v2 — 걷기·가리키기·올려다보기·표정·숨쉬기·깜빡임
-- blocky-3d-review: 블록 3D 검수 기본 — 렌더 전 스틸 6가지 확인, 흔한 결함 수정
-- blocky-science-start-here: 3D 롱폼 시작 안내 (v1)
-- what-if-topic-script: 만약 시리즈 주제·대본 — 팩트체크 포함 8~9분 대본
-- free-tts-narration: 무료 TTS 나레이션 — edge-tts 문장별 나레이션 + 시간표
-- science-scene-design: 과학 장면 블록 설계 — 개념을 블록 장면으로 변환
-- narration-synced-cuts: 나레이션 맞춤 컷 배치 — 문장 시간에 맞춰 컷·카메라 배치
-- text-overlay-remotion: 리모션 자막·설명 카드
-- blocky-thumbnail: 블록 스타일 썸네일 — 1280x720 썸네일
-- vertical-highlight-reshoot: 세로 하이라이트 다시 찍기 — 60~90초 9:16 하이라이트
+## What is new in v2
+- **Code, not only rules**: `blocky-3d-kit` ships tested Blender modules and skeleton cuts. A new cut starts as a copy of a skeleton that already works (a girl walks along a dusk riverside and points at a block comet).
+- A block city with lit windows, pixel river and block clouds; a floating-island stage for explainer shots; colour that does not burn white.
 
-## 출처
+## The path
+| Step | What you want | Skill | Needs |
+|---|---|---|---|
+| 1 | Pick a topic and write a fact-checked script | `what-if-topic-script` | Web search |
+| 2 | Make the narration and sentence timings | `free-tts-narration` | Python, edge-tts, ffmpeg |
+| 3 | Install and test the 3D kit (once) | `blocky-3d-kit` | Blender 5.x, ffmpeg, bash |
+| 4 | Build sets, stages, sky and colour | `blocky-world-v3` | the kit |
+| 5 | Put a comet in the sky | `block-comet-impact` | the kit |
+| 6 | Make characters walk and point | `blocky-character-acting-v2` | the kit |
+| 7 | Place cuts and cameras on the narration | `narration-synced-cuts` | Blender, ffmpeg |
+| 8 | Check stills before rendering | `blocky-render-review` | the kit |
+| 9 | Add captions and cards | `text-overlay-remotion` | Node.js, Remotion |
+| 10 | Make the thumbnail | `blocky-thumbnail` | an image tool, Python |
+| 11 | Cut a 60-90 s vertical highlight | `vertical-highlight-reshoot` | Blender, ffmpeg |
 
-- https://sphereai.work/skills/blocky-science-start-here/
+`science-scene-design` still holds the idea -> scene patterns. Nothing in this set needs a paid service.
+
+## Folder layout per episode
+```
+blocky-3d-kit/            shared code (one copy for all episodes)
+episodes/<NN - title>/
+  script.md               narration by block, shot table, fact-check table
+  01_blend/               one script per section, copied from a kit skeleton
+  02_render/              <section>/####.jpg, still sheets
+  03_audio/               narration wav, timings
+  04_final/               preview without text, final with text
+output/                   finished videos only
+```
+
+## Rules for the whole set
+- **Facts first**: every number and quote is checked against a source before narration.
+- **Blocky style, original assets**: never use a game's official characters, textures, logos or UI.
+- **One shared timeline**: frame = narration second x 30 + 1.
+- **Stills before renders**, one full render at a time, frames as JPG 95.
+
+## Output
+A plan for the first episode: topic options, which skills in which order, and whether the kit test passed.
+
+---
+만든이: sphereai.work (https://sphereai.work)

@@ -1,0 +1,10 @@
+{
+  "comfyui_video": {
+    "verified_gpu_vram_gb": 16,
+    "seconds_per_7s_clip": {"RTX 5090": 540, "RTX 5080 16GB": 840},
+    "disk_gb_models": 45,
+    "note": "16GB 이상에서 실제 생성 확인됨. 12GB 이하는 확인된 적 없음(미검증). 시간은 7초(175프레임, 1536x864, 8스텝) 클립 1개 기준 실측."
+  },
+  "min_disk_free_gb": 80,
+  "min_ram_gb": 32
+}

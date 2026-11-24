@@ -1,0 +1,17 @@
+{
+  "note": "올릴 글 대기열. status가 '대기'인 첫 항목부터 올린다. verified=true는 공식 출처로 금액·대상·기간을 대조했다는 뜻. verify_before_post가 있으면 올리기 직전에 그 페이지로 한 번 더 대조하고, 안 맞으면 '보류'로 바꾸고 다음 항목으로 넘어간다.",
+  "items": [
+    {
+      "id": "g1",
+      "title": "(예시) 제도 이름",
+      "format": "info",
+      "status": "대기",
+      "verified": true,
+      "checked_on": "YYYY-MM-DD",
+      "source": ["https://www.bokjiro.go.kr/ (실제로 확인한 공식 페이지 주소)"],
+      "verify_before_post": "",
+      "a": "(첫 줄 = 격차·판단 훅)\n(둘째 줄 = 누가 받는지 한 줄)\n\n1. 대상: ...\n2. 금액: ...\n3. 기간: ...\n\n(마지막 줄 = 하나만 묻는 질문) 1/2",
+      "b": "신청하는 법\n\n1. ...\n2. ...\n3. ...\n\n공식 누리집 기준 YYYY.MM.DD 확인 2/2"
+    }
+  ]
+}
