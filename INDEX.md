@@ -8,16 +8,27 @@
   사이트 표기(70개)와의 차이 2개는 역사 롱폼 I2V 세트와 T2V 세트가
   시작 점검·기획·TTS·마무리의 4개 스킬을 공유하는데, 세트별 합산 시 중복 계산되기 때문으로 보인다.
 
-## 다운로드 결과 (중요) — 2026-11-25 업데이트
+## 다운로드 결과 (중요) — 2026-11-26 업데이트
 
-- **원본 ZIP 받음: 5개 세트** — ohmingyu1994@gmail.com으로 2026-11-25 01:15-01:16 KST에 도착한 메일(news@sphereai.work)의 ZIP 링크로 다운로드, `downloads/` 폴더에 ZIP 보관, 각 세트 폴더에 압축 해제 완료. 다운로드 링크는 7일 유효.
+- **원본 ZIP 받음: 15개 세트** — 2026-11-25에 5개, 2026-11-26에 5개, 2026-11-27에 5개 추가 수신. ohmingyu1994@gmail.com으로 온 메일(news@sphereai.work)의 ZIP 링크로 다운로드, `downloads/` 폴더에 ZIP 보관, 각 세트 폴더에 압축 해제 완료. 다운로드 링크는 7일 유효.
   - naver-blog-v2 (네이버 블로그 자동화 V2, 원본 파일 54개)
   - blocky-science-v2 (블렌더 3D 롱폼 V2, 원본 파일 58개)
   - blocky-action-shorts (블렌더 3D 액션, 원본 파일 21개)
   - threads-automation (스레드 자동화, 원본 파일 29개)
   - history-longform-i2v (역사 롱폼 I2V, 원본 파일 49개)
-  - 이 5개 세트는 최상위 SKILL.md가 원본으로 교체됐고, 이전 요약본은 각 폴더의 SUMMARY.md로 보관했다. 각 개별 스킬의 원본 SKILL.md·scripts/·references/는 하위 폴더에 그대로 있다.
-- **나머지 15개 세트: 미수신 — 일일 한도 초과로 2026-11-26(내일) 재시도 필요.** 해당 폴더들의 SKILL.md는 여전히 페이지 공개 설명 기반 요약본이다.
+  - history-longform-t2v (역사 롱폼 T2V, 원본 파일 38개) — 2026-11-26 수신
+  - shorts-blueprint (유튜브 쇼츠 기획 자동화, 원본 파일 4개) — 2026-11-26 수신
+  - hook-first-script (유튜브 대본 자동화, 원본 파일 4개) — 2026-11-26 수신
+  - upload-pack-maker (유튜브 업로드 자동화, 원본 파일 5개) — 2026-11-26 수신
+  - instagram-cardnews-maker (인스타 카드뉴스 자동화, 원본 파일 10개) — 2026-11-26 수신
+  - youtube-cardnews-maker (유튜브 카드뉴스 자동화, 원본 파일 9개) — 2026-11-27 수신
+  - longform-to-shorts (롱폼 → 쇼츠 자동 클리퍼, 원본 파일 8개) — 2026-11-27 수신
+  - edit-plan-sheet (영상 하이라이트 자동 편집, 원본 파일 23개) — 2026-11-27 수신
+  - humanize-korean (AI 글 사람처럼 윤문, 원본 파일 39개) — 2026-11-27 수신
+  - source-check-research (영상 자료조사 자동화, 원본 파일 4개) — 2026-11-27 수신
+  - 이 15개 세트는 최상위 SKILL.md가 원본으로 교체됐고, 이전 요약본은 각 폴더의 SUMMARY.md로 보관했다. 각 개별 스킬의 원본 SKILL.md·scripts/·references/는 하위 폴더에 그대로 있다.
+- **나머지 5개 세트: 미수신 — 일일 한도 초과로 2026-11-28(내일) 재시도 필요.** 2026-11-27에는 10개 중 5개까지만 신청 성공했고, 6번째(receipt-to-excel)에서 한도 초과 메시지가 떴다. 남은 5개: receipt-to-excel, contest-video-auto, ui-micro-animations, animal-cooking-shorts-pipeline, dance-lookbook-reel. 해당 폴더들의 SKILL.md는 여전히 페이지 공개 설명 기반 요약본이다.
+  - 2026-11-27 09:15 사전 준비 세션에서 재시도했으나 브라우저가 읽기 전용 준비 모드라 클릭·입력·제출이 막혀 5개 신청 모두 미제출. 직접 API POST도 같은 정책으로 차단됨. 5개 페이지 존재와 "이메일로 ZIP 받기" 버튼은 확인 완료 (youtube-cardnews-maker https://sphereai.work/skills/youtube-cardnews-maker/ v1 23KB, longform-to-shorts https://sphereai.work/skills/longform-to-shorts/ v1 17KB, edit-plan-sheet https://sphereai.work/skills/edit-plan-sheet/ v1 62KB, humanize-korean https://sphereai.work/skills/humanize-korean/ v1 221KB, source-check-research https://sphereai.work/skills/source-check-research/ v1 6KB). 메인 채팅의 일반 브라우저 세션에서 같은 순서로 신청하면 됨.
 - 사이트의 모든 ZIP은 "이메일로 ZIP 받기" 버튼 뒤에 있고, 받기 링크를 메일로 보내주는 방식이다.
 - 다운로드 수, 카테고리, 설명은 각 페이지 공개 정보를 그대로 기록했다.
 - 이 폴더는 Muse 커스텀 스킬 형식이 아니라 **조사·요약 아카이브**이다.
