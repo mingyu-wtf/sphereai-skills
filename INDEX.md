@@ -10,7 +10,7 @@
 
 ## 다운로드 결과 (중요) — 2026-11-26 업데이트
 
-- **원본 ZIP 받음: 15개 세트** — 2026-11-25에 5개, 2026-11-26에 5개, 2026-11-27에 5개 추가 수신. ohmingyu1994@gmail.com으로 온 메일(news@sphereai.work)의 ZIP 링크로 다운로드, `downloads/` 폴더에 ZIP 보관, 각 세트 폴더에 압축 해제 완료. 다운로드 링크는 7일 유효.
+- **원본 ZIP 받음: 16개 세트** — 2026-11-25에 5개, 2026-11-26에 5개, 2026-11-27에 5개, 2026-11-28에 1개 추가 수신. ohmingyu1994@gmail.com으로 온 메일(news@sphereai.work)의 ZIP 링크로 다운로드, `downloads/` 폴더에 ZIP 보관, 각 세트 폴더에 압축 해제 완료. 다운로드 링크는 7일 유효.
   - naver-blog-v2 (네이버 블로그 자동화 V2, 원본 파일 54개)
   - blocky-science-v2 (블렌더 3D 롱폼 V2, 원본 파일 58개)
   - blocky-action-shorts (블렌더 3D 액션, 원본 파일 21개)
@@ -26,8 +26,9 @@
   - edit-plan-sheet (영상 하이라이트 자동 편집, 원본 파일 23개) — 2026-11-27 수신
   - humanize-korean (AI 글 사람처럼 윤문, 원본 파일 39개) — 2026-11-27 수신
   - source-check-research (영상 자료조사 자동화, 원본 파일 4개) — 2026-11-27 수신
-  - 이 15개 세트는 최상위 SKILL.md가 원본으로 교체됐고, 이전 요약본은 각 폴더의 SUMMARY.md로 보관했다. 각 개별 스킬의 원본 SKILL.md·scripts/·references/는 하위 폴더에 그대로 있다.
-- **나머지 5개 세트: 미수신 — 일일 한도 초과로 2026-11-28(내일) 재시도 필요.** 2026-11-27에는 10개 중 5개까지만 신청 성공했고, 6번째(receipt-to-excel)에서 한도 초과 메시지가 떴다. 남은 5개: receipt-to-excel, contest-video-auto, ui-micro-animations, animal-cooking-shorts-pipeline, dance-lookbook-reel. 해당 폴더들의 SKILL.md는 여전히 페이지 공개 설명 기반 요약본이다.
+  - receipt-to-excel (영수증 경비 정리, 원본 파일 5개) — 2026-11-28 수신
+  - 이 16개 세트는 최상위 SKILL.md가 원본으로 교체됐고, 이전 요약본은 각 폴더의 SUMMARY.md로 보관했다. 각 개별 스킬의 원본 SKILL.md·scripts/·references/는 하위 폴더에 그대로 있다.
+- **나머지 4개 세트: 미수신 — 일일 한도 초과로 2026-11-29(내일) 재시도 필요.** 2026-11-28에는 5개 중 1개(receipt-to-excel)까지만 신청 성공했고, 2번째(contest-video-auto)에서 한도 초과 메시지가 떴다. 남은 4개: contest-video-auto, ui-micro-animations, animal-cooking-shorts-pipeline, dance-lookbook-reel. 해당 폴더들의 SKILL.md는 여전히 페이지 공개 설명 기반 요약본이다.
   - 2026-11-27 09:15 사전 준비 세션에서 재시도했으나 브라우저가 읽기 전용 준비 모드라 클릭·입력·제출이 막혀 5개 신청 모두 미제출. 직접 API POST도 같은 정책으로 차단됨. 5개 페이지 존재와 "이메일로 ZIP 받기" 버튼은 확인 완료 (youtube-cardnews-maker https://sphereai.work/skills/youtube-cardnews-maker/ v1 23KB, longform-to-shorts https://sphereai.work/skills/longform-to-shorts/ v1 17KB, edit-plan-sheet https://sphereai.work/skills/edit-plan-sheet/ v1 62KB, humanize-korean https://sphereai.work/skills/humanize-korean/ v1 221KB, source-check-research https://sphereai.work/skills/source-check-research/ v1 6KB). 메인 채팅의 일반 브라우저 세션에서 같은 순서로 신청하면 됨.
 - 사이트의 모든 ZIP은 "이메일로 ZIP 받기" 버튼 뒤에 있고, 받기 링크를 메일로 보내주는 방식이다.
 - 다운로드 수, 카테고리, 설명은 각 페이지 공개 정보를 그대로 기록했다.
